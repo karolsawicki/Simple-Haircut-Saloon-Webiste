@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Oregano');
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace');
+@import url('https://fonts.googleapis.com/css?family=Damion');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+body{
+
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  background: #eee;
+  height: auto;
+
+
+}
+
+h1{
+  color:#000;
+  font-family:'Damion';
+  font-weight: 200;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0;
+
+}
+h2{
+  font-family: 'Oregano', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0;
+
+}
+img{
+  display: block;
+  width: 100%;
+}
+main{
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+  -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+#landing{
+background: #fff;
+
+}
+#landing-text{
+  background: #fff;
+  display: flex;
+  flex: 0 1 40vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#landing-text h2{
+  color:#aaa;
+
+}
+.sticky::before{
+    background: #fff;
+}
+.sticky{
+
+  font-family: 'Kaushan Script', sans-serif;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  top: 0;
+  color:#000;
+  background-color:#fff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+#phone{
+  padding-top: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+
+}
+#numer{
+  padding-left: 22px;
+}
+#insta{
+  top:3px;
+  right:0px;
+  position: absolute;
+  font-family: 'Damion', sans-serif;
+  margin: 5px;
+  font-weight: 400;
+}
+insta:hover {
+    background-color: red;
+}
+
+
+.btn{
+padding: 0.5rem 2rem;
+border: 1px #ccc solid;
+display: inline-block;
+margin: 2rem 0 0;
+border-radius: 50px;
+text-decoration: none;
+color:#333;
+transition: background 500ms ease;
+}
+.btn:hover{
+  background: #f4f4f4;
+}
+#header{
+  padding: 1.5rem;
+  text-align: center;
+  background: #222222;
+  color: #fff;
+
+}
+#header h2{
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.caption{
+  padding: 0.8rem;
+  text-align: center;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+footer{
+
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color:#333;
+}
+footer h3{
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+img title {display: none !important;}
+
+
+
+/*Screen Sizes 700px and Up */
+@media(min-width: 43.75em){
+  .instagram-media{
+    text-align: center;
+  }
+
+  #element1
+  {
+    display: flex;
+
+  }
+  #element2
+  {
+    display: flex;
+    flex-direction: row-reverse;
+
+  }
+  .caption{
+    padding: 0.8rem;
+    text-align: center;
+    margin-top: 4.5rem;
+  }
+  img{
+    display: flex;
+    width: 40%;
+    height: 40%;
+    padding: 1rem;
+  }
+  .map-responsive {
+  margin-left:0rem;
+  margin-right:0rem;
+  margin-top: 1rem;
+    }
+  }
+
+/*Screen Sizes 700px and Up  Mozzila*/
+@-moz-document url-prefix() {
+
+    @media(min-width: 43.75em){
+    .instagram-media{
+      text-align: center;
+    }
+
+    #element1
+    {
+      display: flex;
+
+    }
+    #element2
+    {
+      display: flex;
+      flex-direction: row-reverse;
+
+    }
+    .caption{
+      padding: 0.8rem;
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+    img{
+      display: flex;
+      width: 40vw;
+      height: 40vh;
+      padding: 1rem;
+    }
+    .map-responsive{
+    margin-left:0rem;
+    margin-right:0rem;
+    margin-top: 1rem;
+      }
+    }
+}
